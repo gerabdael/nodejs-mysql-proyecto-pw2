@@ -7,6 +7,7 @@ CREATE TABLE users(
     correo VARCHAR(60) NOT NULL,
     username VARCHAR (16) NOT NULL,
     password VARCHAR(60) NOT NULL,
+    public BOOLEAN,
     fullname VARCHAR(100) NOT NULL
 );
 
