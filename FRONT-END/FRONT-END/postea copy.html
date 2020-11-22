@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Story Packed</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <img src="img/logo2.png" class="d-block w-100" alt="...">
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Inicio
+                    </a></li>
+                    <li class="tm-nav-item"><a href="postea.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Postea
+                    </a></li>
+                    <li class="tm-nav-item"><a href="encuentra.html" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        Encuentra
+                    </a></li>
+                    <li class="tm-nav-item"><a href="registrate.html" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Registrate
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a href="" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+            </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                Pasión por la calidad y la autenticidad de los coleccionistas.
+            </p>
+            <img src="img/logo3.png" class="d-block w-100" alt="...">
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>    
+
+            <div class="row tm-row">
+                <div class="col-lg-8 tm-post-col">
+                    <div class="tm-post-full">                    
+                      
+                        
+                        <!-- Comments -->
+                        <div>
+                            <h2 class="tm-color-primary tm-post-title">Tu perfil</h2>
+                            <hr class="tm-hr-primary tm-mb-45">
+                            <div class="tm-comment tm-mb-45">
+                                <figure class="tm-comment-figure">
+                                    <img src="img/userm.png" alt="Image" class="mb-2 rounded-circle img-thumbnail">
+                                    <figcaption class="tm-color-primary text-center">Mark Sonny</figcaption>
+                                    <figcaption class="tm-color-primary text-center">usuario@gmail.com</figcaption>
+                                </figure>
+                                <!--<div>
+                                    <div class="d-flex justify-content-between">
+                                        <span class="tm-color-primary">usuario@gmail.com</span>
+                                    </div>                                                
+                                </div>-->                                
+                            </div>
+
+                            <hr class="col-12">
+                            <form action="" class="mb-5 tm-comment-form">
+                                <h2 class="tm-color-primary tm-post-title mb-4">Crear lista</h2>
+                                <div class="mb-4">
+                                    <input class="form-control" name="nombre" type="text" placeholder="Nombre...">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" name="descripcion" rows="6" placeholder="Descripcion..."></textarea>
+                                </div>
+
+                                <div class="mb-4">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1" style="font-size:large;">Pública </label>
+                                    </div>
+    
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2" style="font-size:large;">Privada</label>
+                                    </div>
+                                </div>
+
+                                <div class="text-right">
+                                    <button class="tm-btn tm-btn-primary tm-btn-small">Crear</button>                        
+                                </div>                                
+                            </form>        
+                            
+                            <hr class="col-12">
+                            <form action="" class="mb-5 tm-comment-form">
+                                <h2 class="tm-color-primary tm-post-title mb-4">Postear producto</h2>
+                                
+                                <div class="mb-4">
+                                    <input class="form-control" name="nombre" type="text" placeholder="Nombre...">
+                                </div>
+
+                                <div class="mb-4">
+                                    <textarea class="form-control" name="descripcion" rows="6" placeholder="Descripcion..."></textarea>
+                                </div>
+
+                                <div class="mb-4">
+                                    <input class="form-control" name="nombre" type="number" placeholder="Precio comprado...">
+                                </div>
+
+                                <div class="mb-4">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+                                        <label class="custom-file-label" for="customFileLang" style="font-size: medium; border-radius: 0mm; border-color: black; color:rgb(161, 161, 161);">Seleccionar imagen...</label>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                <select class="custom-select" style="font-size: medium; border-radius: 0mm; border-color: black; color:rgb(161, 161, 161);">
+                                <option selected>Seleccionar lista...</option>
+                                <option value="1">Marvel</option>
+                                </select>
+                                </div>  
+
+                                <div class="mb-4">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline3" style="font-size:large;">Se busca </label>
+                                    </div>
+    
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline4" name="customRadioInline4" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline4" style="font-size:large;">Se tiene</label>
+                                    </div>
+                                </div>
+
+                                <div class="text-right">
+                                    <button class="tm-btn tm-btn-primary tm-btn-small">Publicar</button>                        
+                                </div>                                
+                            </form>   
+
+                        </div>
+                    </div>
+                </div>
+                <aside class="col-lg-4 tm-aside-col">
+                    <div class="tm-post-sidebar">
+                        <hr class="mb-3 tm-hr-primary">
+                        <h2 class="mb-4 tm-post-title tm-color-primary">Listas</h2>
+                        <ul class="tm-mb-75 pl-5 tm-category-list">
+                            <li><a href="lista.html" class="tm-color-primary">Lista 1</a></li>
+                            <li><a href="lista.html" class="tm-color-primary">Lista 2</a></li>
+                            <li><a href="lista.html" class="tm-color-primary">Lista 3</a></li>
+                        </ul>
+                        <hr class="mb-3 tm-hr-primary">
+                        <h2 class="tm-mb-40 tm-post-title tm-color-primary">Publicaciones recientes</h2>
+
+                        <a href="#" class="d-block tm-mb-40">
+                            <figure>
+                                <img src="img/hermione.jpg" alt="Image" class="mb-3 img-fluid">
+                                <figcaption class="tm-color-primary">Nombre</figcaption>
+                                <p class="">0.0 MXN</p>
+                            </figure>
+                        </a>
+
+                        <a href="#" class="d-block tm-mb-40">
+                            <figure>
+                                <img src="img/storm.png" alt="Image" class="mb-3 img-fluid">
+                                <figcaption class="tm-color-primary">Nombre</figcaption>
+                                <p class="">0.0 MXN</p>
+                            </figure>
+                        </a>
+
+                    </div>                    
+                </aside>
+            </div>
+
+        <!---------- FOOTER ---------->
+
+        <footer class="row tm-row">
+            <hr class="col-12">
+            <div class="col-md-6 col-12 tm-color-gray">
+                PWCI
+            </div>
+            <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                Story Packed
+            </div>
+        </footer>
+
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>

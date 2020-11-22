@@ -1,0 +1,15 @@
+html, body {
+  margin: 0; 
+  padding: 0;
+}
+.hero-bkg-animated {
+  background: white url(https://i.pinimg.com/564x/25/41/2e/25412e4d9f213ba07584323e5652b643.jpg) repeat 0 0;
+  margin: 0;
+  padding-top: 400%;
+  -webkit-animation: slide 15s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 10 10; }
+    to { background-position: -400px 0; }
+}

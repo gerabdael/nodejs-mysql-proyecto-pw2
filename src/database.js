@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-const {promisify} = require('util');
+const {promisify} = require('util');//CALLBACK A PROMESAS PORQUE NO SOPORTA ESTAS 
 const {database}=require('./keys');
 const pool = mysql.createPool(database);
 pool.getConnection((err,connection)=>{

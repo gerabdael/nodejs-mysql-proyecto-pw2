@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Story Packed</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!---------- BARRA LATERAL ---------->
+
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="tm-site-header">
+                <img src="img/logo2.png" class="d-block w-100" alt="...">
+            </div>
+
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Inicio
+                    </a></li>
+                    <li class="tm-nav-item"><a href="crea.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Crea
+                    </a></li>
+                    <li class="tm-nav-item"><a href="encuentra.html" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        Encuentra
+                    </a></li>
+                    <li class="tm-nav-item"><a href="landing.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Salir
+                    </a></li>
+                </ul>
+            </nav>
+
+            <div class="tm-mb-65">
+                <a href="" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+            </div>
+
+            <p class="tm-mb-80 pr-5 text-white">
+                Pasión por la calidad y la autenticidad de los coleccionistas.
+            </p>
+
+            <img src="img/logo3.png" class="d-block w-100" alt="...">
+
+        </div>
+    </header>
+
+    <!---------- CONTENIDO ---------->
+
+    <div class="container-fluid">
+        <main class="tm-main">
+     
+            <!---------- BUSCADOR ---------->
+
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>    
+
+            <div class="row tm-row">
+
+                <div class="col-lg-8 tm-post-col">
+                    <div class="tm-post-full">                    
+                 
+                        <hr class="tm-hr-primary tm-mb-45">
+
+                        <div class="tm-comment tm-mb-45">
+                            
+                            <figure class="tm-comment-figure">
+                                <img src="img/toys/gandalf.jpg" style = "width:350px" alt="Image">
+                            </figure>
+
+                            <div>
+                                <div class="d-flex justify-content-between">
+                                    <label class="tm-color-dark">Nombre de la lista</label>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <label class="tm-color-dark">Nombre</label>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="tm-color-dark" rows="6">Descripción</p>
+                                </div> 
+                                <div class="d-flex justify-content-between">
+                                    <span>by Admin Nat</span> 
+                                </div>                                              
+                            </div>  
+
+                        </div> 
+
+                    </div>
+                </div>
+
+                <aside class="col-lg-4 tm-aside-col">
+                    <div class="tm-post-sidebar">
+                       
+                        <hr class="mb-3 tm-hr-primary">
+                        <h2 class="tm-mb-40 tm-post-title tm-color-primary">Productos similares</h2>
+
+                        <a href="#" class="d-block tm-mb-40">
+                            <figure>
+                                <img src="img/toys/hermione.jpg" alt="Image" class="mb-3 img-fluid">
+                                <figcaption class="tm-color-dark">Nombre</figcaption>
+                            </figure>
+                        </a>
+
+                        <a href="#" class="d-block tm-mb-40">
+                            <figure>
+                                <img src="img/toys/storm.png" alt="Image" class="mb-3 img-fluid">
+                                <figcaption class="tm-color-dark">Nombre</figcaption>
+                            </figure>
+                        </a>
+                        
+                    </div>                    
+                </aside>
+            </div>
+
+            <!---------- FOOTER ---------->
+
+            <footer class="row tm-row">
+                <hr class="col-12">
+                <div class="col-md-6 col-12 tm-color-gray">PWCI</div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright"> Story Packed</div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+
+</body>
+</html>
