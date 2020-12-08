@@ -1,0 +1,27 @@
+  <div class="container">
+ <form action="/lists/newlist" method="POST" class="mb-5 tm-comment-form">
+                                <h2 class="tm-color-primary tm-post-title mb-4">Crear lista</h2>
+                                <div class="mb-4">
+                                    <input class="form-control"name="nombre" type="text" placeholder="Nombre...">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" name="description" rows="6" placeholder="Descripcion..."></textarea>
+                                </div>
+
+                                <div class="mb-4">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" value= 1 name="public" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1" style="font-size:large;">Pública </label>
+                                    </div>
+    
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" value= 0 name="public" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2" style="font-size:large;">Privada</label>
+                                    </div>
+                                </div>
+
+                                <div class="text-right">
+                                    <button class="tm-btn tm-btn-primary tm-btn-small">Crear</button>                        
+                                </div>                                
+                            </form> 
+  </div>

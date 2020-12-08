@@ -1,29 +1,31 @@
 <div class = "container p-4">
 <div class="row">
-        {{#each toy}}
+        {{#each lists}}
             <div class= "col-md-5">
                 <div class= "card text-center">
                     <div class= "card-body">
                         <h3 class= "card-title text-uppercase">
+                            <a href="/product/">
                             {{nombre}}
+                            </a>
                         </h3>
                         <p class= "m-2">{{Description}}</p>
-                        <p>{{price}}</p>
                         <p>{{timeago created_at}}</p>
-                        <a href="/product/delete/{{id}}"class="btn btn-danger" >Borrar de la lista</a>
-                        <a href="/product/edit/{{id}}" class="btn btn-secondary">Edit</a>
+                        <a href="/lists/delete/{{id}}"class="btn btn-danger" >Borrar de la lista</a>
+                        <a href="/lists/edit/{{id}}" class="btn btn-secondary">Edit</a>
                     </div>
                 </div>
             </div>
             {{else}}
                 <div class="col-md-4 mx auto">
                     <div class="card card-body text-center">
-                        <p>No hay productos aun</p>
-                        <a href="/product/newproducto">Crea uno!</a>
+                        <p>No hay listas aun</p>
+                        <a href="/lists/addlist">Crea una!</a>
                     </div>
                 </div>
         {{/each}}
 </div>
-<a href="/product/newproducto"class="btn btn-success">Agregar</a>
+<a href="/lists/addlist"class="btn btn-success">Agregar</a>
 </div>
-                          
+
+               

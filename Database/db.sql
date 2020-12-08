@@ -8,14 +8,16 @@ CREATE TABLE users(
     username VARCHAR (16) NOT NULL,
     password VARCHAR(60) NOT NULL,
     public BOOLEAN NOT NULL,
-    fullname VARCHAR(100) NOT NULL
+    fullname VARCHAR(100) NOT NULL,
+    IMAG mediumblob NULL
 );
 
 ALTER TABLE users
     ADD PRIMARY KEY (id);
 
 ALTER TABLE users
-    MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT =2;
+    MODIFY id INT(11) NULL AUTO_INCREMENT, AUTO_INCREMENT =2;
+
 
 
 DESCRIBE users;
@@ -23,9 +25,10 @@ DESCRIBE users;
 --LINK
 CREATE TABLE lists(
     id INT(11) NOT NULL,
+    nombre TEXT NOT NULL,
     Description TEXT NOT NULL,
     public BOOLEAN,
-    user_id INT(11) NOT NULL,
+    user_id INT(11) NULL,
     created_at timestamp NOT NULL DEFAULT current_timestamp,
     CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id) 
 );
@@ -34,16 +37,17 @@ ALTER TABLE lists
     ADD PRIMARY KEY (id);
 
 ALTER TABLE lists
-    MODIFY id INT(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+    MODIFY id INT(11) NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
     DESCRIBE lists;
 
 --OBJETOS 
 CREATE TABLE toy(
     id INT(11) NOT NULL,
+    nombre TEXT NOT NULL,
     Description TEXT NOT NULL,
     setiene BOOLEAN,
     price INT(11) NOT NULL,
-    lists_id INT(11) NOT NULL,
+    lists_id INT(11) NULL,
     created_at timestamp NOT NULL DEFAULT current_timestamp,
     CONSTRAINT fk_list FOREIGN KEY (lists_id) REFERENCES lists(id) 
 );
@@ -51,6 +55,6 @@ ALTER TABLE toy
     ADD PRIMARY KEY (id);
 
 ALTER TABLE toy
-    MODIFY id INT(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+    MODIFY id INT(11) NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
     
 DESCRIBE toy;
