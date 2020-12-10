@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center"> 
+            <div class="card-bo">
+                <h3>Welcome {{user.fullname}}</h3>
+                <h4>{{user.username}}</h4>
+                <a href="/lists" class="">
+                    Ve a tus listas
+                </a>
+                <a href="/user/delete/{{id}}"class="btn btn-danger" >Borrar de la lista</a>
+                 <a href="/user/edit" class="btn btn-secondary">Edit</a>
+            </div>    
+            </div>
+        </div>
+    </div>
+</div>

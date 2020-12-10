@@ -3,9 +3,15 @@ const morgan  = require('morgan');
 const hbs = require('express-handlebars');
 const { request } = require('express');
 const path= require('path');
-const multer = require('multer');
+const session = require('express-session');
+const MySQLStore= require('express-mysql-session');
+const passport = require('passport');
+//const multer = require('multer');
+
+const {database}= require('./keys');
 //Initializations
 const app= express();
+require('./lib/passport');
 
 //Settings
 app.set('port', process.env.PORT || 4000);
@@ -19,13 +25,22 @@ app.engine('.hbs', hbs({
 }));
 app.set('view engine','.hbs');
 //Middlewares
+app.use(session({
+    secret: 'geramysqlnodesession',
+    resave: false,
+    saveUninitialized:false,
+    store: new MySQLStore(database)
+}));
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: true}));//acepta los datos sencillos
 app.use(express.json());
-app.use(multer({dest: path.join(__dirname,'public/img/uploads')}).single('image'));
-
+//app.use(multer({dest: path.join(__dirname,'public/img/uploads')}).single('image'));
+app.use(passport.initialize());
+app.use(passport.session());
 //Global Variables
 app.use((req,res,next)=>{
+    app.locals.user= req.user;
+    app.locals.lists = req.lists;
     next();
 })
 //Routes

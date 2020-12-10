@@ -1,5 +1,5 @@
-<link href="/css/style.css" rel="stylesheet">
-     <header class="tm-header" id="tm-header">
+	
+    <header class="tm-header" id="tm-header">
         <div class="tm-header-wrapper">
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -9,21 +9,25 @@
             </div>
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
-                    <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
-                        <i class="fas fa-home"></i>
-                        Inicio
-                    </a></li>
-                    <li class="tm-nav-item"><a href="postea.html" class="tm-nav-link">
+
+                    {{#if user}}
+                    <li class="tm-nav-item"><a href="/lists" class="tm-nav-link">
                         <i class="fas fa-pen"></i>
-                        Postea
+                       Tus listas
                     </a></li>
-                    <li class="tm-nav-item"><a href="encuentra.html" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="/profile" class="tm-nav-link">
                         <i class="fas fa-users"></i>
-                        Encuentra
+                        Perfil
                     </a></li>
-                    <li class="tm-nav-item"><a href="registrate.html" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="/logout" class="tm-nav-link">
                         <i class="far fa-comments"></i>
-                        Registrate
+                        Logout
+                        {{else}}
+                         <li class="tm-nav-item"><a href="signin" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Iniciar sesion
+                    </a></li>
+                        {{/if}}
                     </a></li>
                 </ul>
             </nav>
@@ -44,3 +48,4 @@
             <img src="/img/Imgindex/logo3.png" class="d-block w-100" alt="...">
         </div>
     </header>
+ 
